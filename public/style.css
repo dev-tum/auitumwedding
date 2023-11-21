@@ -24,6 +24,27 @@ body{
 /*-----------------------------------------------
 # header
 -----------------------------------------------*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 1s;
+    z-index: 1300;
+}
+
+header.active {
+    background: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
 
 /*-----------------------------------------------
 # Mobile Navigation
