@@ -167,10 +167,12 @@ header.active {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: scale(0) translate(-50%, -50%);
     width: 60vw;
     z-index: 1100;
     transition: ease-in-out 3s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .bg-slide .content h1 {
@@ -179,7 +181,16 @@ header.active {
 }
 
 .bg-slide .content p {
-    
+    font-family: 'Great Vibes', cursive;
+    font-weight: 200;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.bg-slide.active .content {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
 }
 
 /*-----------------------------------------------
