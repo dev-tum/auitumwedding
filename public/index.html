@@ -12,7 +12,10 @@
     <!-- header -->
     <header>
         <a href="/" class="logo">Wedding</a>
-        <a href="#" class="menu"><ion-icon name="menu-outline"></ion-icon></a>
+        <a href="#" class="menu" onclick="toggleMenu();">
+            <ion-icon class="open" name="menu-outline"></ion-icon>
+            <ion-icon class="close" name="close-outline"></ion-icon>
+        </a>
         <ul class="nav">
             <li><a class="nav-btn active" href="/" onclick="resetHeader();" ><ion-icon name="home-outline"></ion-icon></a></li>
             <li><a class="nav-btn" href="#" data-target="about">about</a></li>
@@ -27,6 +30,25 @@
     </header>
 
     <!-- Mobile Navigation -->
+    <ul class="nav-mobile">
+        <li>
+            <a class="nav-btn active" href="/" onclick="resetHeader();">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a class="nav-btn" href="#" data-target="about">about</a>
+        </li>
+        <li>
+            <a class="nav-btn" href="#" data-target="services">services</a>
+        </li>
+        <li>
+            <a class="nav-btn" href="#" data-target="portfolio">portfolio</a>
+        </li>
+        <li>
+            <a class="nav-btn" href="#" data-target="contact">contact</a>
+        </li>
+    </ul>
 
     <!-- Banner -->
     <div class="banner container-fluid">
@@ -394,7 +416,80 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                
+                <div class="row">
+                    <h1>Contact Us</h1>
+                </div>
+                <!-- Insert your map here, Google map embed -->
+                <iframe 
+                    style="border: 0; width: 100%; height: 270px;"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15453.158156705855!2d100.9502149!3d14.4680564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311debd98df18c29%3A0x23d7dbd19ce3d6c2!2z4Liq4Lin4LiZ4Lit4Liy4Lir4Liy4Lij4Lii4Lit4LiU4LmA4LiC4LiyIOC4quC4o-C4sOC4muC4uOC4o-C4tQ!5e0!3m2!1sen!2sth!4v1701170602089!5m2!1sen!2sth" 
+                    frameborder="0"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <h4>Location:</h4>
+                            <p>Street Name, City Name, State, 12345</p>
+                        </div>
+                        <div class="email">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="phone">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <h4>Call:</h4>
+                            <p>+66 1234 5642</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-5 mt-lg-0">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6  form-group">
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Your Name" 
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6  form-group mt-3 mt-md-0">
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    placeholder="Your Email" 
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea 
+                                class="form-control"
+                                name="message" 
+                                id="message" 
+                                rows="5"
+                                placeholder="Message"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
