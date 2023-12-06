@@ -1,5 +1,5 @@
 /* Import */
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Charmonman&family=Great+Vibes&family=Prompt:wght@100&family=Roboto:wght@100&display=swap');
 
 /* General Global Setting */
 *{
@@ -15,7 +15,7 @@
 body{
     position: relative;
     background: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Prompt', sans-serif;
     width: 100%;
     min-height: 100vh;
     /*overflow: hidden;  /* ไม่ให้ scroll */
@@ -247,7 +247,7 @@ header.active {
 }
 
 .bg-slide .content p {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Charmonman', cursive;
     font-weight: 200;
     font-size: 1.5em;
     letter-spacing: 1px;
@@ -440,7 +440,7 @@ header.active {
 }
 
 .lead svg {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Charmonman', cursive;
     position: absolute;
     z-index: 1100;
     fill: currentColor;
@@ -490,7 +490,7 @@ section.section-show {
 }
 
 section h1 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Charmonman', cursive;
     font-weight: 400;
     font-size: 4em;
     letter-spacing: 1px;
@@ -499,7 +499,7 @@ section h1 {
 }
 
 section h4 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Charmonman', cursive;
     font-weight: 300;
     font-size: 2.5em;
     letter-spacing: 1px;
