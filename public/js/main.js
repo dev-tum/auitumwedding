@@ -60,15 +60,15 @@ const resetHeader = () => {
 };
 
 // initial navigation
-const initNavigation = () => {
+const initNavigation = (nav) => {
     const navList = document.querySelectorAll('.nav-btn');
     navList.forEach(el => {
         el.classList.remove('active');
-        if (el.getAttribute('data-target') === 'services') {
+        if (el.getAttribute('data-target') === nav) {
             el.classList.add('active');
         }
     });
-    sectionNavigator('services');
+    sectionNavigator(nav);
 };
 
 // toggle menu
