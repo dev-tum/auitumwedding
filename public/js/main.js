@@ -68,7 +68,7 @@ const initNavigation = () => {
             el.classList.add('active');
         }
     });
-    sectionNavigator('about');
+    sectionNavigator('services');
 };
 
 // toggle menu
