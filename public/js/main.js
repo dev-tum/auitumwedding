@@ -64,7 +64,7 @@ const initNavigation = () => {
     const navList = document.querySelectorAll('.nav-btn');
     navList.forEach(el => {
         el.classList.remove('active');
-        if (el.getAttribute('data-target') === 'about') {
+        if (el.getAttribute('data-target') === 'services') {
             el.classList.add('active');
         }
     });
